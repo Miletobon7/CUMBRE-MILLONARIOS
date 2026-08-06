@@ -111,16 +111,24 @@ src="https://www.facebook.com/tr?id=27119818521010458&ev=PageView&noscript=1"
 <style>
   /* REGLA EXCLUSIVA PARA CELULARES */
   @media (max-width: 767px) {
+    /* Forzamos a la sección a tener el tamaño correcto */
+    .hero {
+      display: block !important;
+      height: 300px !important;
+      overflow: hidden !important;
+    }
     
-    /* 1. Zoom y tamaño para el banner de arriba */
+    /* Recuperamos la imagen y le aplicamos el zoom central */
     .hero img {
+      display: block !important;
       object-fit: cover !important;
-      object-position: center !important;
-      height: 340px !important; 
+      object-position: center 20% !important; /* Enfoca el texto de arriba */
+      height: 100% !important;
       width: 100% !important;
+      min-height: 300px !important;
     }
 
-    /* 2. Agranda los textos de los países y fechas */
+    /* Agranda los textos de los países y fechas */
     div, span, p, a {
       font-size: 16px !important;
     }
