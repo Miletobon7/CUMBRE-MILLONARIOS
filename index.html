@@ -108,21 +108,21 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=27119818521010458&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
-  <style>
 <style>
   /* REGLA EXCLUSIVA PARA CELULARES */
   @media (max-width: 767px) {
-    /* 1. Agranda los textos de los países y fechas */
-    div, span, p, a {
-      font-size: 16px !important; 
-    }
     
-    /* 2. Truco para el banner de arriba */
-    /* Buscaremos la sección del banner para darle más espacio y que no se vea miniatura */
-    header, .banner, section:first-of-type {
-      background-size: cover !important;
-      background-position: center !important;
-      min-height: 380px !important; /* Le da altura para que no se aplaste */
+    /* 1. Zoom y tamaño para el banner de arriba */
+    .hero img {
+      object-fit: cover !important;
+      object-position: center !important;
+      height: 340px !important; 
+      width: 100% !important;
+    }
+
+    /* 2. Agranda los textos de los países y fechas */
+    div, span, p, a {
+      font-size: 16px !important;
     }
   }
 </style>
